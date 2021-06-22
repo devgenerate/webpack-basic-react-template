@@ -20,6 +20,7 @@ module.exports = function(baseEnv) {
     devServer: {
       port: 3010
     },
+    devtool: 'inline-source-map',
     output: {
       path: path.join(__dirname, "/dist"),
       filename: "index.bundle.js"
