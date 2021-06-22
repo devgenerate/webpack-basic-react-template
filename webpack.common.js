@@ -15,7 +15,6 @@ module.exports = function(baseEnv) {
     return prev
   }, {})
 
-  console.log({ baseEnv, env, envKeys })
   return {
     devServer: {
       port: 3010
@@ -33,7 +32,7 @@ module.exports = function(baseEnv) {
           use: ["babel-loader"]
         },
         {
-          test: /\.s?css?/,
+          test: /\.scss$/,
           exclude: /node_modules/,
           use: [
             MiniCssExtractPlugin.loader,
